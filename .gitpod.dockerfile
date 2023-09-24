@@ -27,12 +27,6 @@ RUN sudo dpkg -i tinygo_${TINYGO_VERSION}_amd64.deb
 RUN rm tinygo_${TINYGO_VERSION}_amd64.deb
 
 # ------------------------------------
-# Install Task
-# ------------------------------------
-RUN go install github.com/go-task/task/v3/cmd/task@latest
-RUN go install -v golang.org/x/tools/gopls@latest
-
-# ------------------------------------
 # Install Rust support
 # ------------------------------------
 RUN rustup target add wasm32-wasi
