@@ -45,5 +45,8 @@ docker stop vigilant_borg
 docker rm vigilant_borg
 docker ps -a # even the stopped containers
 
+# restart if not remove
+docker start vigilant_borg # except if rm
+docker exec -it vigilant_borg bash
 ```
 
