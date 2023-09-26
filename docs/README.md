@@ -40,3 +40,10 @@ You can attach your shell to the terminal of a running container with the `docke
 docker exec -it vigilant_borg bash
 ```
 
+```bash
+docker stop vigilant_borg
+docker rm vigilant_borg
+docker ps -a # even the stopped containers
+
+```
+
